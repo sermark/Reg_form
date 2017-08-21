@@ -1,0 +1,92 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: 'Source Sans Pro';
+    background-color: rgb(245, 245, 245);
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 15px 20px;
+    background-color: rgba(37, 58, 107, 0.3);
+    margin-bottom: 20px;
+    text-align: center;
+}
+    
+.container {
+	margin: 80px auto;
+	width: 90%;
+	max-width: 800px;
+}
+
+.registration {
+	background-color: #fff;
+	max-width: 600px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);
+	border-bottom: 5px solid rgba(37, 58, 107, 0.3);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]  {
+  height: 20px;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  background-color: rgba(37, 58, 107, 0.3);
+  border: 2px solid grey;
+  outline: 0;
+  border-radius: 5px;
+  padding: 5px 15px
+}
+
+.input-field {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.input-field input:focus + .input-requirements {
+  display: block;
+}
+
+.submit-container {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input-requirements {
+  display: none;
+  font-size: 1.3rem;
+  font-style: italic;
+  text-align: left;
+  list-style: disc;
+  list-style-position: inside;
+  max-width: 400px;
+  color: rgb(150,150,150);
+  margin-bottom: 10px;
+}
+
+/*.input-requirements li.invalid {
+	color: #e74c3c;
+}
+.input-requirements li.valid {
+	color: #2ecc71;
+}
+
+.input-requirements li.valid:after {
+	display: inline-block;
+	padding-left: 10px;
+	content: "\2713";
+}*/
