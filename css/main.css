@@ -58,7 +58,8 @@ input[type="submit"] {
   margin-bottom: 40px;
 }
 
-.input-field input:focus + .input-requirements {
+.input-field input:focus + .input-requirements,
+.input-field input:active + .input-requirements{
   display: block;
 }
 
