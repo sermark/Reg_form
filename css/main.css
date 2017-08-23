@@ -38,7 +38,7 @@ input[type="email"]  {
   height: 20px;
   padding: 5px;
   outline: none;
-  border-color: rgb(37, 58, 107);
+  border: 2px solid rgb(37, 58, 107);
 }
 
 .input-field .inval {
@@ -54,7 +54,7 @@ input[type="submit"] {
   border: 2px solid grey;
   outline: 0;
   border-radius: 5px;
-  padding: 5px 15px
+  padding: 5px 40px;
 }
 
 .input-field {

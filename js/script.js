@@ -95,13 +95,13 @@ var passwordValidityChecks = [
 var emailValidityChecks = [
   {
     isInvalid: function (input) {
-      return !input.value.match(/[A-Z0-9._%+-]+@|gmail.com|mail.ru|yahoo.com|yandex.ru/g);
+      return !input.value.match(/^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?(gmail|yahoo|bing|microsoft)\.(com)$/g);
     },
     element: document.querySelector('.requirements-email li:nth-child(1)')
   },
   {
     isInvalidForm: function (input) {
-      return !input.value.match(/[A-Z0-9._%+-]+@|gmail.com|mail.ru|yahoo.com|yandex.ru/g);
+      return !input.value.match(/^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?(gmail|yahoo|bing|microsoft)\.(com)$/g);
     },
   	toolTip: document.querySelector('.requirements-email')
   }
