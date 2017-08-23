@@ -58,10 +58,11 @@ input[type="submit"] {
   margin-bottom: 40px;
 }
 
-.input-field input:focus + .input-requirements,
+/*.input-field input:focus + .input-requirements,
 .input-field input:active + .input-requirements{
   display: block;
-}
+}*/
+
 
 .submit-container {
   width: 400px;
@@ -74,11 +75,20 @@ input[type="submit"] {
   font-size: 1.3rem;
   font-style: italic;
   text-align: left;
-  list-style: disc;
-  list-style-position: inside;
+  list-style: none;
   max-width: 400px;
   color: rgb(150,150,150);
-  margin-bottom: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.input-field .hide {
+  display: none;
+}
+
+.input-field .show {
+  display: block;
+  border: 1px solid red;
 }
 
 input:not([type="submit"]):valid {
@@ -86,10 +96,10 @@ input:not([type="submit"]):valid {
 }
 
 .input-requirements li.invalid {
-	color: #e74c3c;
+	display: block;
 }
 .input-requirements li.valid {
-	color: #2ecc71;
+	display: none;
 }
 
 /*.input-requirements li.valid:after {
