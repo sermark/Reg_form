@@ -25,7 +25,7 @@ h1 {
 
 .registration {
 	background-color: #fff;
-	max-width: 600px;
+	//max-width: 600px;
 	margin: 0 auto;
 	padding-bottom: 20px;
 	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);
@@ -38,7 +38,15 @@ input[type="email"]  {
   height: 20px;
   padding: 5px;
   outline: none;
-  border-color: rgba(37, 58, 107, 1);
+  border-color: rgb(37, 58, 107);
+}
+
+.input-field .inval {
+  border-color: rgb(212, 22, 15);
+}
+
+.input-field .val {
+  border-color: rgb(93, 253, 6);
 }
 
 input[type="submit"] {
@@ -51,22 +59,17 @@ input[type="submit"] {
 
 .input-field {
   width: 400px;
-  margin: 0 auto;
+  margin: 0 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 40px;
+  position: relative;
 }
-
-/*.input-field input:focus + .input-requirements,
-.input-field input:active + .input-requirements{
-  display: block;
-}*/
-
 
 .submit-container {
   width: 400px;
-  margin: 0 auto;
+  margin: 0 40px;
   text-align: center;
 }
 
@@ -76,10 +79,14 @@ input[type="submit"] {
   font-style: italic;
   text-align: left;
   list-style: none;
-  max-width: 400px;
+  width: 240px;
   color: rgb(150,150,150);
   margin: 0;
   padding: 0;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  left: 410px;
 }
 
 .input-field .hide {
@@ -88,11 +95,6 @@ input[type="submit"] {
 
 .input-field .show {
   display: block;
-  border: 1px solid red;
-}
-
-input:not([type="submit"]):valid {
-  border-color: #2ecc71;
 }
 
 .input-requirements li.invalid {
@@ -102,8 +104,3 @@ input:not([type="submit"]):valid {
 	display: none;
 }
 
-/*.input-requirements li.valid:after {
-	display: inline-block;
-	padding-left: 10px;
-	content: "\2713";
-}*/

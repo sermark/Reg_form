@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<form class="registration">
+			<form class="registration" id="form">
 				<h1>Registration Form</h1>
 				<div class="input-field">
 					<label for="username">Username</label>
@@ -21,7 +21,7 @@
 				</div>
 				<div class="input-field">
 					<label for="password">Password</label>
-					<input type="password" id="password" maxlength="100" minlength="8" >
+					<input type="password" id="password" maxlength="110" minlength="8" >
 					<ul class="input-requirements requirements-password">
 						<li>At least 8 characters long (and less than 100 characters)</li>
 						<li>Contains at least 1 number</li>
@@ -33,7 +33,10 @@
 					<label for="email">Email</label>
 					<input type="email" id="email" >
 					<ul class="input-requirements requirements-email">
-						<li>Must only contain email ...@gmail.com/@mail.ru/@yahoo.com/@yandex.ru</li>
+						<li>
+							Must only contain email ...@gmail.com/@mail.ru/
+							@yahoo.com/@yandex.ru
+						</li>
 					</ul>
 				</div>
 				<div class="submit-container">
