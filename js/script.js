@@ -52,7 +52,7 @@ var usernameValidityChecks = [
   },
   {
     isInvalidForm: function (input) {
-      return !input.value.match(/\S{8,}$/);
+      return !input.value.match(/^[a-zA-Z]{8,}$/);
     },
   	toolTip: document.querySelector('.requirements-name')
   }
