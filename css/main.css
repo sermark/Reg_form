@@ -53,7 +53,7 @@ input[type="submit"] {
   background-color: rgba(37, 58, 107, 0.3);
   border: 2px solid grey;
   outline: 0;
-  border-radius: 5px;
+  //border-radius: 5px;
   padding: 5px 40px;
 }
 
